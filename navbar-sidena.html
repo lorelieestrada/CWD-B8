@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/a565602669.js" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar and Sidenav</title>
+</head>
+<body>
+    <h1 class="center">
+    <div class="container"> 
+      <i class="fa-solid fa-bars left small menu hide-on-large-only"></i>
+            Navbar
+    </h1>
+    <div class="divider"></div>
+    <div class="container">
+    <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+
+    <br><br>
+    <!-- Right Aligned Links -->
+    <h3>Right Aligned Links</h3>
+    <p>To right align your navbar links, just add a right class to your <ul> that contains them.</p>
+      <nav class="grey darken-4">
+        <div class="nav-wrapper">
+         <div class="container">
+           <a href="#" class="brand-logo"><i class="fa-brands fa-windows blue-text center"></i></a>
+           <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li> <a href="sass.html">About Windows</a></li>
+             <li> <a href="badges.html">Get Windows</a></li>
+             <li> <a href="collapsible.html">Get Help</a></li>
+           </ul>
+        </div>
+     </nav>
+
+    <br><br>
+    <!-- Left Aligned Links-->
+    <h3>Left Aligned Links</h3>
+    <p>To left align your navbar links, just add a left class to your <ul> that contains them.</p>
+    <nav class="black">
+      <div class="nav-wrapper">
+         <div class="container">
+           <a href="brand-logo"><i class="fa-brands fa-android green-text text-accent-3 right"></i></a>
+           <ul id="nav-mobile" class="left hide-on-med-and-down">
+             <li><a href="sass.html">What is Android?</a></li>
+             <li><a href="badges.html">Phones and Tablets</a></li>
+             <li><a href="collapsible.html">Enterprise</a></li>
+           </ul>
+        </div>
+       </div>
+    </nav>
+
+    <br><br>
+    <!-- Centering the Logo -->
+    <h3>Centering the Logo</h3>
+    <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <a class="brand-logo">. You will have to make sure yourself that links do not overlap if you use this.</p>
+      <nav class="light blue">
+        <div class="nav-wrapper">
+         <div class= "container">
+           <a href="#" class="brand-logo center"><i class="fa-brands fa-facebook-messenger blue"></i></a>
+           <ul id="nav-mobile" class="center hide-on-med-and-down">
+             <li><a href="sass.html">Home</a></li>
+             <li><a href="badges.html">About</a></li>
+             <li><a href="collapsible.html">Contact Us</a></li>
+           </ul>
+        </div>
+     </nav>
+
+    <br><br>
+    <!-- Active Items -->
+    <h3>Active Items</h3>
+    <p>Add active class to your li tags to denote the current page.</p>
+    <nav class="light blue">
+      <div class="nav-wrapper">
+       <div class= "container">
+         <a href="#!" class="brand-logo center"><i class="fa-brands fa-linkedin white-text"></i>
+         <ul class="left hide-on-med-and-down">
+           <li><a href="sass.html">Home</a></li>
+           <li> <a href="badges.html">About</a></li>
+           <li class="active"><a href="collapsible.html">Contact Us</a></li>
+         </ul>
+      </div>
+   </nav>
+
+     <br><br>
+     <!-- Extended Navbar with Tabs -->
+    <h3>Extended Navbar with TAbs </h3>
+    <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+    <nav class="nav-extended black">
+        <div class="nav-wrapper">
+        <div class="container">
+         <a href="" class="brand-logo center"><i class="fa-brands fa-github"></i>
+         <a href="#" class="sidenav-trigger" data-target="mobile-demo"><i class="fa-solid fa-bars grey-text"></i>
+         </a>
+       </div>
+       <div class="nav-content">
+        <ul class="tabs tabs-transparent">
+          <li class="tab">
+            <a href="#home">Home</a>
+          </li>
+          <li class="tab">
+            <a class="active" href="#issues">Issues</a>
+          </li>
+          <li class="tab">
+            <a href="">Pull requests</a>
+          </li>
+        </ul>
+       </div>
+      </nav>
+
+        <!-- Tabs structure -->
+        <div class="row blue-grey darken-4">
+            <!-- Home -->
+          <div class="col s12" id="home">
+              <div class="card-panel blue-grey darken-3">
+                <h6 class="white-text">Create your first project</h6>
+                <h6 class="white-text">Ready to start building? Create a repository for a new idea or bring over an existing repository to keep contributing to it.</h6>
+                <br>
+                <button class="btn green darken-2">create repository</button> <a class="">Import repository</a>
+              </div>
+          </div>
+        </div>
+        
+        <!-- Issues -->
+        <div class="col s12" id="issues">
+          <div class="card-panel blue-grey darken-3">
+            <div class="container">
+              <h5 class="center white-text">No results matched your search.</h5>
+            </div>
+          </div>
+        </div>
+
+      <!-- sidenav structure -->
+      <ul class="sidenav blue-grey darken-4" id="mobile-demo">
+        <li>
+          <a href="" class="brand-logo"><i class="fa-brands fa-github small menu white-text"></i>
+        <li>
+          <a href=""> 
+            <h6 class="white-text"><i class="fa-solid fa-house"></i>Home
+            </h6>
+            <h6 class="white-text"><i class="fa-regular fa-circle-dot"></i>Issues</h6>
+            <h6 class="white-text"><i class="fa-solid fa-code-pull-request"></i>Pull requests</h6>
+            <h6 class="white-text"><i class="fa-solid fa-message"></i>Discussions</h6>
+        </li>
+
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="divider"></div>
+            <div class="container">
+            <h6 class="white-text"><i class="fa-brands fa-wpexplorer"></i>Explore</h6>
+            <h6 class="white-text"><i class="fa-solid fa-gift"></i>Marketplace</h6>
+            <h6 class="white-text"><i class="fa-solid fa-message"></i>Give new navigation feedback 
+            </h6>
+        </a>
+      </ul>
+    </div>
+
+          
+
+    
+    
+
+    <div style="height: 1000px;"></div>
+
+    
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+     <script>
+      $(document).ready(function(){
+           // sidenav init
+            $('.sidenav').sidenav();
+            // tabs init
+            $('.tabs').tabs();
+      });
+     </script>
+</body>
+</html>
+
+
